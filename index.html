@@ -39,13 +39,31 @@ Not different pages
 	var emotional_count = 0
 	var sleep_count = 0
 	     
-	 function cognitivehalfAdd(){ // adds 0.5 count to cognitive
+	function cognitivehalfAdd(){ // adds 0.5 count to cognitive
        		cognitive_count = covid19_count + 0.5;
 	}
 	function cognitivewholeAdd() { // adds 1 count to cognitive
 		cognitive_count = cognitive_count + 1;
 	}
-	     
+	function physicalhalfAdd(){ // adds 0.5 count to physical
+       		physical_count = physical_count + 0.5;
+	}
+	function physicalwholeAdd(){ // adds 1 count to physical
+       		physical_count = physical_count + 1;
+	}
+	function emotionalhalfAdd(){ // adds 0.5 count to emotional
+       		emotional_count = emotional_count + 0.5;
+	}
+	function emotionalwholeAdd(){ // adds 1 count to emotional
+       		emotional_count = emotional_count + 1;
+	}
+	function sleephalfAdd(){ // adds 0.5 count to sleep
+       		sleep_count = sleep_count + 0.5;
+	}
+	function sleepwholeAdd(){ // adds 1 count to cognitive
+       		sleep_count = sleep_count + 0.5;
+	
+		
 	function result(){
 		var resultText = document.getElementById("result");
 		resultText.innerHTML="Your concussion count is " + count  + " out of 22.";

@@ -34,11 +34,17 @@ Not different pages
 
      <script>
 	     
-	var count = 0;
+	var cognitive_count = 0;
+	var physical_count = 0
+	var emotional_count = 0
+	var sleep_count = 0
 	     
-	function cAdd(){
-		count = count + 1;    
-     	}
+	 function cognitivehalfAdd(){ // adds 0.5 count to cognitive
+       		cognitive_count = covid19_count + 0.5;
+	}
+	function cognitivewholeAdd() { // adds 1 count to cognitive
+		cognitive_count = cognitive_count + 1;
+	}
 	     
 	function result(){
 		var resultText = document.getElementById("result");
